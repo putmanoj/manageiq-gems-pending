@@ -17,3 +17,6 @@ minimum_version =
   end
 
 gem "activesupport", minimum_version
+
+# security fixes for indirect dependencies
+gem "concurrent-ruby", ">=1.3.7" # CVE-2026-54904 https://github.com/ruby-concurrency/concurrent-ruby/security/advisories/GHSA-h8w8-99g7-qmvj
